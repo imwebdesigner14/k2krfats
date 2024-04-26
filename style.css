@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    text-align: center;
+}
+
+.webheader{
+    height: 15vh;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+
+}
+
+.webheader nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+.webheader nav div{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+
+.webheader nav ul{
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    column-gap: 30px;
+    list-style: none;
+  
+
+}
+
+.webheader nav ul li a{
+    color: #777777;
+    text-decoration: none;
+}
+
+.webheader nav ul li a:hover{
+    color: black;
+}
+
+/* toggel box css starts from here */
+
+
+.webheader nav .togglebox{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
+    display: none;
+
+}
+
+.webheader nav .togglebox .line{
+    width: 100%;
+    border: 3px solid black;
+   
+}
+
+.webheader nav .togglebox .line::before{
+    width: 100%;
+    border: 3px solid black;
+    content: '';
+    top: 15px;
+    left: 0;
+    position: absolute;
+}
+.webheader nav .togglebox .line::after{
+    width: 100%;
+    border: 3px solid black;
+    content: '';
+    top: 30px;
+    left: 0;
+    position: absolute;
+}
+
+/* mob header css starts from here */
+
+.mobheader{
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+   display: none;
+}
+
+.mobheader nav {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mobheader nav ul{
+    list-style: none;
+   
+ 
+    
+}
+.mobheader nav ul li{
+    height: 100%;
+    width: 100%;
+    
+   
+    padding: 20px;
+
+}
+
+.mobheader nav ul li a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #777777;
+
+    font-size: 25px;
+    padding: 17px;
+    
+}
+
+
+
+/* banner css starts from here */
+
+.banner{
+    height: 700px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(bannerimg\ 2.jpg);
+    background-position: center center;
+
+}
+
+/* shop container css sratsb from here */
+
+
+.shopcontainer{
+    height: 1550px;
+    width: 90%;
+   align-items: center;
+   text-align: center;
+    margin:50px auto;
+    overflow:auto;
+}
+
+.shopcontainer .innerbox{
+    height: 100%;
+    width:100%;
+    display: flex;
+    margin: 50px 30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    scrollbar-width:100px ;
+    
+    
+}
+
+.shopcontainer .innerbox h2{
+    padding: 20px;
+}
+
+.shopcontainer .innerbox .boxs{
+    height: 300px;
+    width: 22%;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+   
+    
+
+    
+}
+.shopcontainer .innerbox .boxs img{
+    height: 70%;
+    width: 95%;
+    transition: all 0.5s;
+}
+.shopcontainer .innerbox .boxs img:hover{
+    transform: scale(1.05);
+}
+   
+.shopcontainer .innerbox .boxs h6{
+    margin-top: 10px;
+}
+.shopcontainer .innerbox .boxs a{
+    text-decoration: none;
+    color: lightgray;
+}
+.explore{
+    margin: auto;
+}
+.explore a{
+    height: 50px;
+    width: 200px;
+    border: 1px solid #5F4B8B;
+    padding: 10px;
+   text-align: center;
+   text-decoration: none;
+   color: #5F4B8B;
+   
+   
+}
+
+.explore a:hover{
+    color: white;
+    background-color: #5F4B8B;
+}
+
+/* map section css starts from here */
+
+
+.mapsection{
+    height: 600px;
+    width: 100%;
+  
+    justify-content: space-around;
+    display: flex;
+    margin-top: 200px;
+}
+
+.mapsection .map{
+    height: 97%;
+    width: 45%;
+    margin: auto;
+    
+
+}
+.mapsection .map iframe{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+.mapsection .address{
+    height: 97%;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    
+    
+
+}
+.mapsection .address h3{
+    padding: 40px;
+}
+
+.mapsection .address a{
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+   text-align: center;
+   text-decoration: none;
+   color: #5F4B8B;
+}
+
+.mapsection .address a:hover{
+    color: white;
+    background-color: black;
+}
+
+
+/* sepration css*/
+
+.sepration{
+    width: 90%;
+    border: 1px solid #777777;
+    margin:10px auto;
+    
+}
+
+/* footer css starts from here */
+
+footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .fbox1{
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+footer .fbox1 h3{
+    color: black;
+    font-size: 20px;
+}
+
+footer .fbox1 p{
+    margin-top: 30px;
+}
